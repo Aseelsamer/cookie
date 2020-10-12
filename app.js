@@ -12,12 +12,12 @@ function Location( name,min, max,AvgCookiePerCust) {
     locations1.push(this); 
 }
 
-getCustomerPerHour: function () {
-    for (var i = 0; i < this.hours.length; i++) {
-        var dialy = Math.floor(Math.random() * (this.max - this.min + 1)) + this.min;
-        this.customerPerHour[i] = dialy;
-    }
-}
+// getCustomerPerHour: function () {
+//     for (var i = 0; i < this.hours.length; i++) {
+//         var dialy = Math.floor(Math.random() * (this.max - this.min + 1)) + this.min;
+//         this.customerPerHour[i] = dialy;
+//     }
+// }
 
 Location.prototype.getCustomerPerHour= function (min , max){
     for (var i=0 ;i<hours.length;i++){
