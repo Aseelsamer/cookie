@@ -34,15 +34,15 @@ var Seattle = {
         var title = document.createElement('h1');
         container1.appendChild(title);
         title.textContent = "Welcome to Sales page";
-        var par=document.createElement('p');
+        var par = document.createElement('p');
         container1.appendChild(par);
-        par.textContent="Seatle";
+        par.textContent = "Seatle";
         var ulE1 = document.createElement('ul');
         container1.appendChild(ulE1);
         for (var i = 0; i < this.sales.length; i++) {
-            var liE=document.createElement('li');
+            var liE = document.createElement('li');
             ulE1.appendChild(liE);
-            liE.textContent=this.sales[i];
+            liE.textContent = this.sales[i];
         }
     }
 }
@@ -53,8 +53,8 @@ Seattle.getCustomerPerHour();
 Seattle.getCookiesPerHour();
 Seattle.render();
 //   Seattle.render();
-  // numOfCustomers*avg of cookies
-  // count it for all hours
+// numOfCustomers*avg of cookies
+// count it for all hours
 // Seattle.randCustomeers(2,7);
 
 
@@ -94,15 +94,15 @@ var tokyo = {
         var title = document.createElement('h1');
         container1.appendChild(title);
         title.textContent = "Welcome to Sales page";
-        var par=document.createElement('p');
+        var par = document.createElement('p');
         container1.appendChild(par);
-        par.textContent="tokyo";
+        par.textContent = "tokyo";
         var ulE1 = document.createElement('ul');
         container1.appendChild(ulE1);
         for (var i = 0; i < this.sales.length; i++) {
-            var liE=document.createElement('li');
+            var liE = document.createElement('li');
             ulE1.appendChild(liE);
-            liE.textContent=this.sales[i];
+            liE.textContent = this.sales[i];
         }
     }
 }
@@ -113,8 +113,8 @@ tokyo.getCustomerPerHour();
 tokyo.getCookiesPerHour();
 tokyo.render();
 //   Seattle.render();
-  // numOfCustomers*avg of cookies
-  // count it for all hours
+// numOfCustomers*avg of cookies
+// count it for all hours
 // Seattle.randCustomeers(2,7);
 
 
@@ -154,15 +154,15 @@ var dubai = {
         var title = document.createElement('h1');
         container1.appendChild(title);
         title.textContent = "Welcome to Sales page";
-        var par=document.createElement('p');
+        var par = document.createElement('p');
         container1.appendChild(par);
-        par.textContent="dubai";
+        par.textContent = "dubai";
         var ulE1 = document.createElement('ul');
         container1.appendChild(ulE1);
         for (var i = 0; i < this.sales.length; i++) {
-            var liE=document.createElement('li');
+            var liE = document.createElement('li');
             ulE1.appendChild(liE);
-            liE.textContent=this.sales[i];
+            liE.textContent = this.sales[i];
         }
     }
 }
@@ -210,15 +210,15 @@ var paris = {
         var title = document.createElement('h1');
         container1.appendChild(title);
         title.textContent = "Welcome to Sales page";
-        var par=document.createElement('p');
+        var par = document.createElement('p');
         container1.appendChild(par);
-        par.textContent="paris";
+        par.textContent = "paris";
         var ulE1 = document.createElement('ul');
         container1.appendChild(ulE1);
         for (var i = 0; i < this.sales.length; i++) {
-            var liE=document.createElement('li');
+            var liE = document.createElement('li');
             ulE1.appendChild(liE);
-            liE.textContent=this.sales[i];
+            liE.textContent = this.sales[i];
         }
     }
 }
@@ -266,15 +266,15 @@ var lima = {
         var title = document.createElement('h1');
         container1.appendChild(title);
         title.textContent = "Welcome to Sales page";
-        var par=document.createElement('p');
+        var par = document.createElement('p');
         container1.appendChild(par);
-        par.textContent="lima";
+        par.textContent = "lima";
         var ulE1 = document.createElement('ul');
         container1.appendChild(ulE1);
         for (var i = 0; i < this.sales.length; i++) {
-            var liE=document.createElement('li');
+            var liE = document.createElement('li');
             ulE1.appendChild(liE);
-            liE.textContent=this.sales[i];
+            liE.textContent = this.sales[i];
         }
     }
 }
