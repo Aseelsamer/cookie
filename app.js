@@ -1,5 +1,4 @@
-
-    "use strict";
+"use strict";
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm',];
 var locations1 = [];
 function Location(name, min, max, AvgCookiePerCust) {
@@ -50,10 +49,12 @@ Location.prototype.render = function () {
         tr2.appendChild(td2);
         td2.textContent = this.cookiesPerHour[i];
         totalDaily += this.cookiesPerHour[i];
+        
     }
     var td3 = document.createElement('td');
     tr2.appendChild(td3);
     td3.textContent = totalDaily;
+    
 }
 for (var i = 0; i < locations1.length; i++) {
     locations1[i].render();
@@ -80,15 +81,19 @@ function total() {
     var td4 = document.createElement('td');
     tr4.appendChild(td4);
     td4.textContent = "Totals"; //the cell of word'totals'
-    var total = 0; 
+    var total = 0;
+    var total2=0; 
     for (var i = 0; i < hours.length; i++) {
         var td5 = document.createElement('td');
         tr4.appendChild(td5);
         for (var j = 0; j < locations1.length; j++) {
             total += locations1[j].cookiesPerHour[i];
             td5.textContent = total;
+            total2+=locations1[j].cookiesPerHour[i];
         }
         total = 0; //to avoid adding the value of totals of pevoius colomn
     }
+    var td6 = document.createElement('td');
+    tr4.appendChild(td6);
+    td6.textContent=total2;
 }
-
