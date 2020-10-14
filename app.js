@@ -82,18 +82,52 @@ function total() {
   tr4.appendChild(td4);
   td4.textContent = 'Totals'; //the cell of word'totals'
   var total = 0;
-  var total2=0;
+  var total2 = 0;
   for (var i = 0; i < hours.length; i++) {
     var td5 = document.createElement('td');
     tr4.appendChild(td5);
     for (var j = 0; j < locations1.length; j++) {
       total += locations1[j].cookiesPerHour[i];
       td5.textContent = total;
-      total2+=locations1[j].cookiesPerHour[i];
+      total2 += locations1[j].cookiesPerHour[i];
     }
     total = 0; //to avoid adding the value of totals of pevoius colomn
   }
   var td6 = document.createElement('td');
   tr4.appendChild(td6);
-  td6.textContent=total2;
+  td6.textContent = total2;
 }
+
+
+var myForm = document.getElementById('shopForm');
+
+myForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+  console.log(event.target);
+
+  // function myForm() {
+  //     event.preventDefault();
+  //     console.log(event.target);
+
+
+  var Lname = event.target.text1.value;
+  console.log(Lname);
+
+  var min = event.target.number1.value;
+  console.log(min);
+
+  var max = event.target.number2.value;
+  console.log(max);
+
+  var AvgCookiePerCust = event.target.avg3.value;
+  console.log(AvgCookiePerCust);
+
+  var locations1 = new Location(Lname, min, max, AvgCookiePerCust);
+
+  console.log(locations1);
+  locations1.render();
+
+
+});
+
+
