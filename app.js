@@ -97,7 +97,16 @@ function total() {
   tr4.appendChild(td6);
   td6.textContent = total2;
 }
-
+// Location.prototype.getCustomerPerHour = function (min, max) {
+//   for (var i = 0; i < hours.length; i++) {
+//     this.customerPerHour[i] = getRndInteger(min, max);
+//   }
+// };
+// Location.prototype.getcookiesPerHour = function () {
+//   for (var i = 0; i < hours.length; i++) {
+//     this.cookiesPerHour[i] = Math.floor(this.AvgCookiePerCust * this.customerPerHour[i]);
+//   }
+// };
 
 var myForm = document.getElementById('shopForm');
 
@@ -123,11 +132,6 @@ myForm.addEventListener('submit', function (event) {
   console.log(AvgCookiePerCust);
 
   var locations1 = new Location(Lname, min, max, AvgCookiePerCust);
-
   console.log(locations1);
   locations1.render();
-
-
 });
-
-
