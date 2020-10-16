@@ -33,9 +33,9 @@ for (var j = 0; j < locations1.length; j++) {
   locations1[j].getCustomerPerHour(locations1[j].min, locations1[j].max);
   locations1[j].getcookiesPerHour();
 }
-var container1 = document.getElementById('container');
-var tableE1 = document.createElement('table');
-container1.appendChild(tableE1);
+// var container1 = document.getElementById('container');
+// var tableE1 = document.createElement('table');
+// container1.appendChild(tableE1);
 tableHead(); //first line in table
 Location.prototype.render = function () {
   var tr2 = document.createElement('tr');
@@ -107,6 +107,27 @@ function total() {
 //     this.cookiesPerHour[i] = Math.floor(this.AvgCookiePerCust * this.customerPerHour[i]);
 //   }
 // };
+
+var container1 = document.getElementById('container');
+var tableE1 = document.createElement('table');
+container1.appendChild(tableE1);
+
+function renderHeaderRow(table) {
+
+  var headerRow = document.createElement('tr');
+  table.appendChild(headerRow);
+  var Header = document.createElement('th');
+  headerRow.appendChild(Header);
+
+  for (var i=0;i<hours.length;i++) {
+    var hoursstring=document.createElement('th');
+    headerRow.appendChild(hoursstring);
+    hoursstring.textContent=hours[i];
+  }
+  var totalcookiedperlocation=document.createElement('th');
+  headerRow.appendChild(totalcookiedperlocation);
+  totalcookiedperlocation.textContent='Daily Location Total';
+}
 
 var myForm = document.getElementById('shopForm');
 
