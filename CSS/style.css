@@ -2,6 +2,7 @@ h1 {
     background-color: aquamarine;
     font-weight: 200;
     margin: 0 auto;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 body{
@@ -38,7 +39,8 @@ p{
     font-size: medium;
     display: block;
     font-style: italic;
-    background-color: violet
+    background-color: violet;
+    font-family: 'Chilanka', cursive;
     
 
 
