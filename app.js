@@ -55,6 +55,7 @@ function renderheaderRow(table) {
   headerRow.appendChild(totalcookiesperlocation);
   totalcookiesperlocation.textContent='Daily Location Total' ;
 }
+
 renderheaderRow(tableE1);
 tableE1.prototype.renderdataRow = function() {
   var dataRow = document.createElement('th');
